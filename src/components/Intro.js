@@ -37,7 +37,7 @@ function Intro() {
             </div>
             <div className={styles.bottomDiv}>
                 <h1 className={styles.bottomHeading}>SUSTAINABLE STYLE</h1>
-                <p className={styles.bottomDesc}>We understand that the fashion industry is a significant contributor to environmental problems, and we aim to reduce the industry's negative impact. The brand's products are made using recycled materials, bamboo fabrics, and other sustainable materials to minimize waste and reduce carbon emissions.</p>
+                <p className={styles.bottomDesc}>We understand that the fashion industry is a significant contributor to environmental problems, and we aim to reduce the industry&apos;s negative impact. The brand&apos;s products are made using recycled materials, bamboo fabrics, and other sustainable materials to minimize waste and reduce carbon emissions.</p>
             </div>
         </div>
     )
