@@ -1,5 +1,6 @@
 import BambooLinen from '@/components/BambooLinen'
 import Intro from '@/components/Intro'
+import Sustainable from '@/components/Sustainable'
 import Head from 'next/head'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <div className={styles.main}>
         <Intro />
         <BambooLinen />
+        <Sustainable />
       </div>
     </>
   )

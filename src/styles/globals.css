@@ -19,3 +19,11 @@ p, h1 {
 h2 {
   font-family: 'SatoshiBold', sans-serif;
 }
+
+.img-sus {
+  @apply group-hover:scale-125 absolute w-full h-full object-contain rounded-2xl transition-all duration-500 ease-in-out transform;
+}
+
+.img-text {
+  @apply absolute text-5xl group-hover:scale-105 transition-all duration-500 ease-in-out transform;
+}

@@ -4,7 +4,7 @@ import React from 'react'
 function BambooLinen() {
 
     const styles = {
-        main: "min-h-screen flex flex-col items-center justify-center space-y-20",
+        main: "min-h-screen flex flex-col items-center justify-center space-y-20 mt-20",
         centerDiv: "w-full h-full flex flex-col items-center justify-center",
         headingTop: "relative text-[#F15C53] text-[200px]/[220px] 2xl:text-[260px]/[240px] tracking-[10px] 2xl:tracking-[10px]",
         heaginBottom: "relative text-[#F15C53] text-[300px]/[220px] 2xl:text-[380px]/[300px] tracking-[15px] 2xl:tracking-[25px]",
