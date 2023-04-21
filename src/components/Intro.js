@@ -7,7 +7,7 @@ function Intro() {
         main: "min-h-screen p-10 flex flex-col items-start justify-between",
         headingDiv: "relative flex flex-col items-start w-full",
         headingTop: "absolute flex flex-row items-center space-x-10 w-full",
-        heading: "whitespace-nowrap font-bold text-[250px]/[220px] 2xl:text-[300px]/[240px] tracking-[10px] 2xl:tracking-[20px]",
+        heading: "whitespace-nowrap text-[240px]/[220px] 2xl:text-[300px]/[240px] tracking-[10px] 2xl:tracking-[20px]",
         imgDiv: "w-full h-[240px] relative overflow-hidden",
         introImg: "absolute w-full h-full bg-intro bg-center bg-cover",
         headingBottom: "absolute top-[240px] 2xl:top-[260px]",
@@ -21,13 +21,13 @@ function Intro() {
         <div className={styles.main}>
             <div className={styles.headingDiv}>
                 <div className={styles.headingTop}>
-                    <h1 className={styles.heading}>PURE</h1>
+                    <h2 className={styles.heading}>PURE</h2>
                     <div className={styles.imgDiv}>
                         <div className={styles.introImg} />
                     </div>
                 </div>
                 <div className={styles.headingBottom}>
-                    <h1 className={styles.heading}>STITCH.CO</h1>
+                    <h2 className={styles.heading}>STITCH.CO</h2>
                 </div>
                 <Image
                     src="https://cdn.discordapp.com/attachments/896756725833678928/1098820872971751545/Artboard_1.png"

@@ -1,3 +1,4 @@
+import BambooLinen from '@/components/BambooLinen'
 import Intro from '@/components/Intro'
 import Head from 'next/head'
 
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <Intro />
+        <BambooLinen />
       </div>
     </>
   )
