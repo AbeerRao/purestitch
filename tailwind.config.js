@@ -6,12 +6,16 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontSize: {
+      "intro": ["250px", {
+        lineHeight: "220px",
+        letterSpacing: "10px"
+      }]
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+        intro: "url('https://cdn.discordapp.com/attachments/896756725833678928/1098821235074404455/Rectangle_7.png')",
+      }
     },
   },
   plugins: [],
