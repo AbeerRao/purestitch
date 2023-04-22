@@ -12,6 +12,10 @@
   src: url("../../assets/Satoshi/Fonts/WEB/fonts/Satoshi-Bold.ttf")
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p, h1 {
   font-family: 'SatoshiRegular', sans-serif;
 }
@@ -26,4 +30,8 @@ h2 {
 
 .img-text {
   @apply absolute text-5xl group-hover:scale-105 transition-all duration-500 ease-in-out transform;
+}
+
+.img-shop {
+  @apply absolute w-full h-full object-contain;
 }

@@ -11,7 +11,7 @@ function Intro() {
         imgDiv: "w-full h-[240px] relative overflow-hidden",
         introImg: "absolute w-full h-full bg-intro bg-center bg-cover",
         headingBottom: "absolute top-[240px] 2xl:top-[260px]",
-        logo: "z-50 ml-20 2xl:ml-48",
+        logo: "z-20 ml-20 2xl:ml-48",
         bottomDiv: "w-full h-full flex flex-col items-start space-y-10",
         bottomHeading: "text-[#F15C53] font-semibold text-[40px]",
         bottomDesc: "text-[20px] leading-[30px] w-2/3 2xl:w-1/2"
