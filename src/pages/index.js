@@ -1,5 +1,7 @@
 import BambooLinen from '@/components/BambooLinen'
+import Footer from '@/components/Footer'
 import Intro from '@/components/Intro'
+import ShopNow from '@/components/ShopNow'
 import Sustainable from '@/components/Sustainable'
 import Head from 'next/head'
 
@@ -20,6 +22,8 @@ export default function Home() {
         <Intro />
         <BambooLinen />
         <Sustainable />
+        <ShopNow />
+        <Footer />
       </div>
     </>
   )
