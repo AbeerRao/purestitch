@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { RxHamburgerMenu } from "react-icons/rx"
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx"
 
 function Header() {
 
@@ -39,7 +39,7 @@ function Header() {
                             height={40}
                             width={40} />
                         <button className={styles.button} onClick={() => toggleDiv()}>
-                            <RxHamburgerMenu />
+                            <RxCross1 />
                         </button>
                     </div>
                     <div className={styles.bottom}>
