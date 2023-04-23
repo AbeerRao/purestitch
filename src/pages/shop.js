@@ -1,7 +1,7 @@
-import CartLeft from '@/components/CartLeft'
 import Catalog from '@/components/Catalog'
 import Header from '@/components/Header'
 import ShopHome from '@/components/ShopHome'
+import Head from 'next/head'
 import React from 'react'
 
 function shop() {
@@ -13,6 +13,11 @@ function shop() {
 
     return (
         <div className={styles.main}>
+            <Head>
+                <title>Purestitch Shop</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Header />
             <ShopHome />
             <Catalog />

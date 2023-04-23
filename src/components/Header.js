@@ -1,7 +1,31 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx"
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth, db } from "firebase.js"
+import { doc, getDoc, setDoc } from "firebase/firestore";
+
+const provider = new GoogleAuthProvider();
+let user = auth.currentUser
+
+const signin = async () => {
+    const result = await signInWithPopup(auth, provider);
+    console.log(result?.user)
+    const userRef = doc(db, "users", result?.user.uid);
+    const userSnap = await getDoc(userRef);
+
+    if (userSnap.exists()) {
+        pass
+    } else {
+        await setDoc(doc(db, "users", result?.user.uid), {
+            name: result?.user.displayName,
+            email: result?.user.email,
+        })
+    }
+    
+    user = result?.user
+}
 
 function Header() {
 
@@ -53,9 +77,13 @@ function Header() {
                             <Link href="/" onClick={() => toggleDiv()} className={styles.link}>
                                 <h2>SETTINGS</h2>
                             </Link>
-                            <Link href="/" onClick={() => toggleDiv()} className={styles.link}>
-                                <h2>ACCOUNT</h2>
-                            </Link>
+                            {user ? (
+                                <Link href="/" className={styles.link}>
+                                    <h2>ACCOUNT</h2>
+                                </Link>
+                            ) : (
+                                <h2 onClick={signin} className={styles.link}>LOGIN</h2>
+                            )}
                         </div>
                         <div className={styles.right}>
                             <Image
