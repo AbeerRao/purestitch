@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import AnimatedText from 'react-animated-text-content';
 
 function BambooLinen() {
 
@@ -16,8 +17,42 @@ function BambooLinen() {
     return (
         <div className={styles.main}>
             <div className={styles.centerDiv}>
-                <h2 className={styles.headingTop}>BAMBOO</h2>
-                <h2 className={styles.heaginBottom}>LINEN</h2>
+                <AnimatedText
+                    className={styles.headingTop}
+                    type="words"
+                    animation={{
+                        x: '200px',
+                        y: '-20px',
+                        scale: 1.1,
+                        ease: 'ease-in-out',
+                    }}
+                    animationType="rifle"
+                    interval={0.06}
+                    duration={2}
+                    tag="h2"
+                    includeWhiteSpaces
+                    threshold={0.1}
+                    rootMargin="20%" >
+                        BAMBOO
+                </AnimatedText>
+                <AnimatedText
+                    className={styles.heaginBottom}
+                    type="words"
+                    animation={{
+                        x: '200px',
+                        y: '-20px',
+                        scale: 1.1,
+                        ease: 'ease-in-out',
+                    }}
+                    animationType="rifle"
+                    interval={0.06}
+                    duration={2}
+                    tag="h2"
+                    includeWhiteSpaces
+                    threshold={0.1}
+                    rootMargin="20%" >
+                        LINEN
+                </AnimatedText>
                 <Image
                     src="https://cdn.discordapp.com/attachments/896756725833678928/1098821567179391087/7143-031ST.png"
                     height={200}

@@ -5,6 +5,7 @@ import { RxHamburgerMenu, RxCross1 } from "react-icons/rx"
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth, db } from "firebase.js"
 import { doc, getDoc, setDoc } from "firebase/firestore";
+import AnimatedText from 'react-animated-text-content';
 
 const provider = new GoogleAuthProvider();
 let user = auth.currentUser
@@ -67,21 +68,107 @@ function Header() {
                     </div>
                     <div className={styles.bottom}>
                         <div className={styles.left}>
-                            <Link href="/" onClick={() => toggleDiv()} className={styles.link}>
-                                <h2>HOME</h2>
+                            <Link href="/" onClick={() => toggleDiv()}>
+                            <AnimatedText
+                                className={styles.link}
+                                type="words"
+                                animation={{
+                                    x: '200px',
+                                    y: '-20px',
+                                    scale: 0,
+                                    ease: 'ease-in-out',
+                                }}
+                                animationType="wave"
+                                interval={0.06}
+                                duration={2}
+                                tag="h2"
+                                includeWhiteSpaces
+                                threshold={0.1}
+                                rootMargin="20%" >
+                                    HOME
+                            </AnimatedText>
                             </Link>
-                            <Link href="/shop" onClick={() => toggleDiv()} className={styles.link}>
-                                <h2>SHOP</h2>
+                            <Link href="/shop" onClick={() => toggleDiv()}>
+                                <AnimatedText
+                                    className={styles.link}
+                                    type="words"
+                                    animation={{
+                                        x: '200px',
+                                        y: '-20px',
+                                        scale: 0,
+                                        ease: 'ease-in-out',
+                                    }}
+                                    animationType="wave"
+                                    interval={0.06}
+                                    duration={2}
+                                    tag="h2"
+                                    includeWhiteSpaces
+                                    threshold={0.1}
+                                    rootMargin="20%" >
+                                        SHOP
+                                </AnimatedText>
                             </Link>
-                            <Link href="/" onClick={() => toggleDiv()} className={styles.link}>
-                                <h2>SETTINGS</h2>
+                            <Link href="/" onClick={() => toggleDiv()}>
+                                <AnimatedText
+                                    className={styles.link}
+                                    type="words"
+                                    animation={{
+                                        x: '200px',
+                                        y: '-20px',
+                                        scale: 0,
+                                        ease: 'ease-in-out',
+                                    }}
+                                    animationType="wave"
+                                    interval={0.06}
+                                    duration={2}
+                                    tag="h2"
+                                    includeWhiteSpaces
+                                    threshold={0.1}
+                                    rootMargin="20%" >
+                                        SETTINGS
+                                </AnimatedText>
                             </Link>
                             {user ? (
-                                <Link href="/" className={styles.link}>
-                                    <h2>ACCOUNT</h2>
+                                <Link href="/">
+                                    <AnimatedText
+                                        className={styles.link}
+                                        type="words"
+                                        animation={{
+                                            x: '200px',
+                                            y: '-20px',
+                                            scale: 0,
+                                            ease: 'ease-in-out',
+                                        }}
+                                        animationType="wave"
+                                        interval={0.06}
+                                        duration={2}
+                                        tag="h2"
+                                        includeWhiteSpaces
+                                        threshold={0.1}
+                                        rootMargin="20%" >
+                                            ACCOUNT
+                                    </AnimatedText>
                                 </Link>
                             ) : (
-                                <h2 onClick={signin} className={styles.link}>LOGIN</h2>
+                                <AnimatedText
+                                    className={styles.link}
+                                    type="words"
+                                    animation={{
+                                        x: '200px',
+                                        y: '-20px',
+                                        scale: 0,
+                                        ease: 'ease-in-out',
+                                    }}
+                                    animationType="wave"
+                                    interval={0.06}
+                                    duration={2}
+                                    tag="h2"
+                                    includeWhiteSpaces
+                                    threshold={0.1}
+                                    rootMargin="20%"
+                                    onClick={signin} >
+                                        LOGIN
+                                </AnimatedText>
                             )}
                         </div>
                         <div className={styles.right}>

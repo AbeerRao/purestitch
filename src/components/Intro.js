@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import AnimatedText from 'react-animated-text-content';
 
 function Intro() {
 
@@ -21,13 +22,47 @@ function Intro() {
         <div className={styles.main}>
             <div className={styles.headingDiv}>
                 <div className={styles.headingTop}>
-                    <h2 className={styles.heading}>PURE</h2>
+                    <AnimatedText
+                        className={styles.heading}
+                        type="words"
+                        animation={{
+                            x: '200px',
+                            y: '-20px',
+                            scale: 1.1,
+                            ease: 'ease-in-out',
+                        }}
+                        animationType="block"
+                        interval={0.06}
+                        duration={2}
+                        tag="h2"
+                        includeWhiteSpaces
+                        threshold={0.1}
+                        rootMargin="20%" >
+                            PURE
+                    </AnimatedText>
                     <div className={styles.imgDiv}>
                         <div className={styles.introImg} />
                     </div>
                 </div>
                 <div className={styles.headingBottom}>
-                    <h2 className={styles.heading}>STITCH.CO</h2>
+                    <AnimatedText
+                        className={styles.heading}
+                        type="words"
+                        animation={{
+                            x: '200px',
+                            y: '-20px',
+                            scale: 1.1,
+                            ease: 'ease-in-out',
+                        }}
+                        animationType="block"
+                        interval={0.06}
+                        duration={2}
+                        tag="h2"
+                        includeWhiteSpaces
+                        threshold={0.1}
+                        rootMargin="20%" >
+                            STITCH.CO
+                    </AnimatedText>
                 </div>
                 <Image
                     src="https://cdn.discordapp.com/attachments/896756725833678928/1098820872971751545/Artboard_1.png"
@@ -36,7 +71,24 @@ function Intro() {
                     className={styles.logo} /> 
             </div>
             <div className={styles.bottomDiv}>
-                <h1 className={styles.bottomHeading}>SUSTAINABLE STYLE</h1>
+                <AnimatedText
+                    className={styles.bottomHeading}
+                    type="words"
+                    animation={{
+                        x: '200px',
+                        y: '-20px',
+                        scale: 1.1,
+                        ease: 'ease-in-out',
+                    }}
+                    animationType="wave"
+                    interval={1}
+                    duration={1}
+                    tag="h2"
+                    includeWhiteSpaces
+                    threshold={0.1}
+                    rootMargin="20%" >
+                        SUSTAINABLE STYLE
+                </AnimatedText>
                 <p className={styles.bottomDesc}>We understand that the fashion industry is a significant contributor to environmental problems, and we aim to reduce the industry&apos;s negative impact. The brand&apos;s products are made using recycled materials, bamboo fabrics, and other sustainable materials to minimize waste and reduce carbon emissions.</p>
             </div>
         </div>

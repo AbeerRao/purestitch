@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import AnimatedText from 'react-animated-text-content';
 
 function ShopNow() {
 
@@ -14,7 +15,24 @@ function ShopNow() {
 
     return (
         <div className={styles.main}>
-            <h2 className={styles.heading}>SHOP NOW</h2>
+            <AnimatedText
+                className={styles.heading}
+                type="words"
+                animation={{
+                    x: '200px',
+                    y: '-20px',
+                    scale: 1.1,
+                    ease: 'ease-in-out',
+                }}
+                animationType="wave"
+                interval={0.06}
+                duration={2}
+                tag="h2"
+                includeWhiteSpaces
+                threshold={0.1}
+                rootMargin="20%" >
+                    SHOP NOW
+            </AnimatedText>
             <button className={styles.button}>Catalog</button>
             <div className={styles.bottomDiv}>
                 <div className={styles.imageDiv}>
