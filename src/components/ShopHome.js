@@ -10,7 +10,7 @@ function ShopHome() {
         textDiv: "absolute flex flex-col items-center justify-between w-full h-full py-5",
         heading: "text-3xl",
         bottomDiv: "mb-40 2xl:mb-60 space-y-10",
-        tag: "text-8xl",
+        tag: "text-7xl md:text-8xl",
         button: "text-[#FFFDEB] bg-[#F15C53] px-10 py-5 font-bold rounded-2xl shadow-lg hover:shadow-2xl hover:scale-110 transition transform duration-300 ease-out",
     }
 

@@ -33,5 +33,5 @@ h2 {
 }
 
 .img-shop {
-  @apply absolute h-full w-full bg-contain;
+  @apply absolute h-full w-full md:bg-contain bg-cover;
 }

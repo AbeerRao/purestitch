@@ -25,15 +25,15 @@ function Catalog() {
     )
 
     const styles = {
-        main: "flex flex-col w-full flex-1 h-full items-start space-y-14 text-[#193333] p-10 w-full",
-        heading: "text-6xl",
-        filterDiv: "flex flex-row items-center w-1/2 justify-between",
+        main: "flex flex-col w-full flex-1 h-full items-start space-y-14 text-[#193333] md:p-10 p-5 mt-10 md:mt-0 w-full",
+        heading: "text-5xl md:text-6xl",
+        filterDiv: "flex flex-row items-center w-full md:w-1/2 justify-between",
         filter: "cursor-pointer hover:text-[#F15C53] transition transform duration-300 ease-in-out",
-        searchDiv: "flex flex-col items-start space-y-2 w-1/2",
+        searchDiv: "flex flex-col items-start space-y-2 w-full md:w-1/2",
         searchTop: "flex flex-row items-end w-full justify-between",
         searchBar: "w-full border-b-2 border-[#193333] bg-[#FFFDEB] pr-5 pb-2 text-xl focus:outline-none",
         button: "cursor-pointer font-bold hover:text-[#F15C53] transition transform duration-300 ease-in-out border-b-2 border-[#193333] pb-2",
-        resultDiv: "grid grid-cols-4 2xl:grid-cols-5 w-full h-full justify-between gap-10",
+        resultDiv: "grid grid-cols-1 md:grid-cols-4 2xl:grid-cols-5 w-full h-full justify-between gap-10",
         result: "flex flex-col items-start h-full w-full space-y-3 cursor-pointer",
         imageDiv: "flex flex-col items-center justify-center w-full h-[400px] 2xl:h-[500px] relative border-2 border-[#193333] overflow-hidden group",
         resultImage: "w-full h-full object-cover absolute group-hover:scale-125 2xl:group-hover:scale-150 transition transform duration-300 ease-in-out",

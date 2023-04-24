@@ -1,4 +1,5 @@
 import Catalog from '@/components/Catalog'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import ShopHome from '@/components/ShopHome'
 import Head from 'next/head'
@@ -7,8 +8,7 @@ import React from 'react'
 function shop() {
 
     const styles = {
-        main: "min-h-screen bg-[#FFFDEB] w-full text-[#193333] flex flex-col items-center",
-        container: "flex flex-row items-start justify-between w-full h-full"
+        main: "min-h-screen bg-[#FFFDEB] w-full text-[#193333] flex flex-col items-center overflow-x-hidden",
     }
 
     return (
@@ -21,6 +21,7 @@ function shop() {
             <Header />
             <ShopHome />
             <Catalog />
+            <Footer />
         </div>
     )
 }
