@@ -9,7 +9,7 @@ import Head from 'next/head'
 export default function Home() {
 
   const styles = {
-    main: "min-h-screen bg-[#FFFDEB] w-full text-[#193333] flex flex-col items-center",
+    main: "min-h-screen bg-[#FFFDEB] w-full text-[#193333] flex flex-col items-center overflow-x-hidden",
   }
 
   return (

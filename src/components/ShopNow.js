@@ -4,11 +4,11 @@ import React from 'react'
 function ShopNow() {
 
     const styles = {
-        main: "min-h-screen flex flex-col items-center justify-center space-y-10 w-full px-20 mt-40",
-        heading: "text-5xl",
-        button: "text-[#FFFDEB] bg-[#F15C53] px-10 py-5 font-bold rounded-2xl shadow-lg hover:shadow-2xl hover:scale-110 transition transform duration-300 ease-out",
-        bottomDiv: "w-full h-full flex-1 flex flex-row items-center space-x-20 2xl:space-x-0 2xl:justify-around",
-        imageDiv: "w-1/3 2xl:w-1/4 h-[500px] 2xl:h-[700px] bg-red-400 relative rounded-2xl overflow-hidden group cursor-pointer",
+        main: "min-h-screen flex flex-col items-center justify-center space-y-10 w-full px-5 md:px-20 mt-40",
+        heading: "text-5xl w-full md:text-center",
+        button: "text-[#FFFDEB] bg-[#F15C53] px-10 py-5 font-bold rounded-2xl shadow-lg hover:shadow-2xl hover:scale-110 transition transform duration-300 ease-out w-full md:w-min",
+        bottomDiv: "w-full h-full flex-1 flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-20 2xl:space-x-0 2xl:justify-around",
+        imageDiv: "w-full md:w-1/3 2xl:w-1/4 h-[500px] 2xl:h-[700px] bg-red-400 relative rounded-2xl overflow-hidden group cursor-pointer",
         image: "absolute rounded-2xl group-hover:scale-110 transition transform duration-300 ease-out object-cover object-center"
     }
 

@@ -5,16 +5,16 @@ import { FaLinkedinIn } from 'react-icons/fa'
 function Footer() {
 
     const styles = {
-        main: "bg-[#193333] w-full text-[#FFFDEB] flex flex-row items-center justify-between p-20 mt-40",
-        footerLeft: "w-full flex flex-col items-start justify-around space-y-16",
+        main: "bg-[#193333] w-full text-[#FFFDEB] flex flex-col md:flex-row items-center justify-between md:p-20 py-20 px-5 mt-40 space-y-20 md:space-y-0",
+        footerLeft: "w-full flex flex-col items-start md:space-y-16 space-y-5",
         heading: "text-5xl",
         socials: "flex flex-row items-center w-full space-x-7",
         socialIcon: "text-3xl cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out hover:skew-y-12",
-        footerRight: "w-full h-full flex flex-col items-start space-y-16",
+        footerRight: "w-full h-full flex flex-col items-start md:space-y-16 space-y-5 ",
         rightTop: "w-full space-y-2",
         contact: "flex flex-col items-start text-sm font-light text-gray-500",
         rightBottom: "w-full h-full space-y-2 flex flex-col items-start",
-        links: "w-full flex flex-row items-center space-x-10 text-sm font-light text-gray-500"
+        links: "w-full md:flex md:flex-row md:items-center md:space-x-10 md:text-sm font-light text-gray-500 grid grid-cols-3"
     }
 
     return (
