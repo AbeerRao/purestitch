@@ -11,12 +11,11 @@ let user = auth.currentUser
 
 const signin = async () => {
     const result = await signInWithPopup(auth, provider);
-    console.log(result?.user)
     const userRef = doc(db, "users", result?.user.uid);
     const userSnap = await getDoc(userRef);
 
     if (userSnap.exists()) {
-        pass
+        console.log(".")
     } else {
         await setDoc(doc(db, "users", result?.user.uid), {
             name: result?.user.displayName,
@@ -36,8 +35,8 @@ function Header() {
         container: "bg-[#FFFDEB] w-full h-full flex flex-col items-center",
         top: "flex flex-row items-center justify-between w-full px-10 py-3 border-b-2 border-gray-500",
         bottom: "w-full h-full flex flex-row items-center",
-        right: "w-1/2 h-full relative",
-        left: "w-1/2 h-full flex flex-col items-start justify-center space-y-10 text-left text-7xl px-20",
+        right: "w-1/2 h-full relative hidden md:block",
+        left: "w-full md:w-1/2 h-full flex flex-col items-start justify-center space-y-5 md:space-y-10 text-left text-7xl px-20",
         img: "object-cover object-right absolute",
         link: "text-4xl md:text-8xl font-semibold cursor-pointer hover:scale-110 hover:-skew-x-[20deg] transition transform duration-300 ease-in-out"
     }
